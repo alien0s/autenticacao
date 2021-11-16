@@ -1,13 +1,130 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Arca-heavy; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: -o-linear-gradient(234deg,rgb(91, 41, 226) 48%,rgb(2, 103, 255),rgb(8, 144, 255));
+  background-image: linear-gradient(216deg,rgb(91, 41, 226) 48%,rgb(2, 103, 255),rgb(8, 144, 255));
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+@font-face {
+  font-family: Arca-heavy;
+  src: url('./fonts/arca-heavy.woff');
+}
+@font-face {
+  font-family: Arca-bold;
+  src: url('./fonts/arca-bold.woff');
+}
+#login_page{
+  overflow: hidden;
+}
+#login_page img{
+  top: 0.9rem;
+  width: 48vw;
+  position: absolute;
+  z-index: -1;
+}
+#login_container{
+  width: 60%;
+  float: right;
+  height: 100vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#login_container h1{
+  margin-bottom: 30px;
+}
+#api_link{
+  font-size: 20px;
+}
+#login_container h1,#dashboard_page h1{
+  font-family: Arca-heavy;
+  color: #fff;
+  font-size: 2.5rem;
+}
+#box_login{
+  width: 60%;
+}
+.field{
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: Arca-bold;
+  padding: 20px 0;
+}
+.field::placeholder{
+  color: rgba(255, 255, 255, 0.623);
+}
+#box_login button{
+  width: 100%;
+  background-color: transparent;
+  border: 3px solid rgb(255, 255, 255);
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 20px;
+  font-family: Arca-heavy;
+  cursor: pointer;
+  margin-top: 30px;
+}
+#box_login button:hover{
+  background-image: -o-linear-gradient(51deg,rgb(91 41 226),rgb(25, 0, 255));
+  background-image: linear-gradient(39deg,rgb(91 41 226),rgb(25, 0, 255));
+}
+#dashboard_page h1,.box_cards{
+  width: 60%;
+  margin: 0 auto;
+}
+#dashboard_page h1{
+  margin-top: 1rem;
+}
+.card{
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.199);
+  padding: 20px 50px;
+  color:#fff;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.card img{
+  width: 75%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+#login_container, #login_page img,.card, .box_texts, .box_texts_row{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.box_texts{
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.box_texts_row{
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.box_texts p{
+  font-family: Arca-bold;
+  margin-top: 8px;
 }
